@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="basic">#040D12</color>
+    <color name="background">#f8ecee</color>
+    <color name="textTitleColor">#740c1c</color>
+    <color name="textSubtitleColor">#842c3b</color>
+    <color name="buttonRedColor">#740c1c</color>
+    <color name="textColorButton">#c88a1a</color>
+    <color name="hint">#8f8585</color>
+    <color name="error">#FF2D55</color></resources>
