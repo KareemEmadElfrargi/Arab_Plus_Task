@@ -10,7 +10,7 @@ import com.example.arabplustask.feature.domain.entity.LocalCompetitions
 interface ICompetitionDao {
 
     @Insert(onConflict = OnConflictStrategy.REPLACE)
-     fun insert( data : List<LocalCompetition>)
+     fun insert( listOfCompetition : List<LocalCompetition>)
 
     @Query("SELECT * FROM CompetitionsTable")
      fun getAll(): List<LocalCompetition>

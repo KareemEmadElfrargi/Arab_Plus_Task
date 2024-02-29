@@ -9,18 +9,17 @@ class CompetitionRemoteDataImp:ICompetitionRemoteData {
     override suspend fun getCompetition(): Resource<RemoteCompetitions> {
         val apiService = RetrofitClient.create()
         try {
-            val competition = apiService.getCompetitions(secretData)
-            Log.i("CompetitionRemoteDataImp", "getCompetition: ${competition.body().toString()}")
-            if (competition.isSuccessful){
-                competition.body()?.let {
+            val competitionsResponse = apiService.getCompetitions(secretData)
+            Log.i("CompetitionRemoteDataImp", "getCompetitionResponse: ${competitionsResponse.body().toString()}")
+            if (competitionsResponse.isSuccessful){
+                competitionsResponse.body()?.let {
                     return Resource.Success(it)
                 } ?: return Resource.Success(RemoteCompetitions(null,null,null))
             }else{
-                return Resource.Error(competition.message().toString())
+                return Resource.Error(competitionsResponse.message().toString())
             }
-
         }catch (e:Exception){
-            return Resource.Error(e.message.toString())
+            return Resource.Error(" fetch api message : ${e.message.toString()}")
         }
     }
 }

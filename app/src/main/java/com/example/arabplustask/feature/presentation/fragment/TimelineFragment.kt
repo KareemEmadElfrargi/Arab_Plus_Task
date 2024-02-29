@@ -6,17 +6,19 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
+import androidx.fragment.app.viewModels
 import androidx.lifecycle.lifecycleScope
 import com.example.arabplustask.databinding.FragmentTimelineBinding
 import com.example.arabplustask.feature.data.data_source.remote.CompetitionRemoteDataImp
-import com.example.arabplustask.feature.presentation.common.adapter.CompetitionAdapter
+import com.example.arabplustask.feature.presentation.common.viewmodel.CompetitionViewModel
 import dagger.hilt.android.AndroidEntryPoint
 import kotlinx.coroutines.launch
 
 @AndroidEntryPoint
 class TimelineFragment : Fragment() {
     private lateinit var binding: FragmentTimelineBinding
-    private val competitionAdapter by lazy { CompetitionAdapter(requireContext()) }
+    private  val viewModel: CompetitionViewModel by viewModels()
+//    private val competitionAdapter by lazy { CompetitionAdapter(requireContext()) }
     private val instance by lazy { CompetitionRemoteDataImp() }
     override fun onCreateView(
         inflater: LayoutInflater,
@@ -36,5 +38,8 @@ class TimelineFragment : Fragment() {
                 Log.i("MainActivity","${data.data.toString()} ${data.message.toString()}" )
             }
         }
+    }
+    private fun setupRecycleView(){
+
     }
 }

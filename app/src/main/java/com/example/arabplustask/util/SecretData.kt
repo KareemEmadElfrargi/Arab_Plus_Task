@@ -1,3 +1,3 @@
 package com.example.arabplustask.util
 
-val secretData = "93d08bea3c7b48979b4b098fc8707dd5"
+val secretData = "c50eb7000a9c41bb99f3a612f7185ecd"

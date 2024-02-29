@@ -10,7 +10,7 @@ import com.example.arabplustask.feature.domain.entity.RemoteCompetition
 import com.example.arabplustask.feature.domain.entity.RemoteCompetitions
 import com.example.arabplustask.feature.domain.entity.RemoteCurrentSeason
 import com.example.arabplustask.feature.domain.entity.RemoteWinner
-
+// from remote data api to domain
 fun RemoteCompetitions.toDomainCompetitions() = DomainCompetitions(
     competitions = remoteCompetitions?.toDomainCompetition(),
     count = count,
@@ -30,7 +30,6 @@ fun List<RemoteCompetition>.toDomainCompetition() : List<DomainCompetition>{
             type = it.type
         )
     }
-
 }
 
 fun RemoteArea.toDomainArea()= DomainArea(

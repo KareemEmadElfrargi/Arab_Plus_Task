@@ -5,5 +5,5 @@ import com.example.arabplustask.feature.domain.entity.RemoteCompetitions
 import com.example.arabplustask.util.Resource
 
 interface IGetAllCompetition {
-    suspend fun getAllPosts(): Resource<RemoteCompetitions>
+    suspend fun getAllCompetitions(): Resource<RemoteCompetitions>
 }

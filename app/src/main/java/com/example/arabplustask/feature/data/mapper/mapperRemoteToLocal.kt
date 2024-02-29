@@ -10,7 +10,7 @@ import com.example.arabplustask.feature.domain.entity.RemoteCompetition
 import com.example.arabplustask.feature.domain.entity.RemoteCompetitions
 import com.example.arabplustask.feature.domain.entity.RemoteCurrentSeason
 import com.example.arabplustask.feature.domain.entity.RemoteWinner
-
+// from remote api data to local database
 fun RemoteCompetitions.toLocalCompetitions() = LocalCompetitions(
     competitions = remoteCompetitions?.toLocalCompetition()
 )

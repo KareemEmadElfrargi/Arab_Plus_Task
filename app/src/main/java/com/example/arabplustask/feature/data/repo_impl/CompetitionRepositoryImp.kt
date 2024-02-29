@@ -13,8 +13,8 @@ import com.example.arabplustask.util.Resource
 import javax.inject.Inject
 
 class CompetitionRepositoryImp @Inject constructor(
-    private val  competitionRemoteDataSource : ICompetitionRemoteData
-    , private val competitionLocalDataSource : AppDatabase
+    private val  competitionRemoteDataSource : ICompetitionRemoteData,
+    private val competitionLocalDataSource : AppDatabase
 ):ICompetitionRepository {
     override suspend fun getCompetition(): Resource<RemoteCompetitions> {
         val dataFromRemote = getFromRemote()
@@ -22,7 +22,7 @@ class CompetitionRepositoryImp @Inject constructor(
             saveToLocal(dataFromRemote.data.remoteCompetitions.toLocalCompetition())
             return dataFromRemote
         }else {
-            return Resource.Error("x")
+            return Resource.Error(" repoImp : ${dataFromRemote.message.toString()}")
         }
     }
 
@@ -33,7 +33,7 @@ class CompetitionRepositoryImp @Inject constructor(
 
     override suspend fun getFromRemote(): Resource<RemoteCompetitions> {
         val dataFromRemote = competitionRemoteDataSource.getCompetition()
-        if (dataFromRemote.data==null){
+        if (dataFromRemote.data == null){
             return Resource.Error(dataFromRemote.message.toString())
         } else {
             return Resource.Success(dataFromRemote.data)

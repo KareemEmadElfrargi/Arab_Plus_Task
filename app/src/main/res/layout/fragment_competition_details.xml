@@ -6,52 +6,76 @@
     android:padding="16dp">
 
     <ImageView
-        android:id="@+id/emblemImageView"
+        android:id="@+id/emblem_iv"
         android:layout_width="100dp"
         android:layout_height="100dp"
         android:scaleType="centerCrop"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintVertical_bias="0.5"
         android:src="@drawable/champions" />
 
     <TextView
-        android:id="@+id/nameTextView"
+        android:id="@+id/nameOfCompetition_tv"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textSize="18sp"
         android:textStyle="bold"
-        app:layout_constraintStart_toEndOf="@id/emblemImageView"
-        app:layout_constraintTop_toTopOf="@id/emblemImageView"
+        app:layout_constraintStart_toEndOf="@id/emblem_iv"
+        app:layout_constraintTop_toTopOf="@id/emblem_iv"
+        app:layout_constraintBottom_toTopOf="@+id/startDate_tv"
         android:layout_marginStart="16dp"
         android:text="Africa Cup" />
 
-    <TextView
-        android:id="@+id/startDateTextView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:layout_constraintStart_toEndOf="@id/emblemImageView"
-        app:layout_constraintTop_toBottomOf="@id/nameTextView"
-        android:layout_marginTop="8dp"
-        android:text="Start Date: 2024-01-13" />
 
     <TextView
-        android:id="@+id/endDateTextView"
+        android:id="@+id/area_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="area"
+        app:layout_constraintStart_toStartOf="@id/startDate_tv"
+        app:layout_constraintTop_toBottomOf="@id/emblem_iv" />
+
+    <TextView
+        android:id="@+id/startDate_tv"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:layout_constraintStart_toEndOf="@id/emblemImageView"
-        app:layout_constraintTop_toBottomOf="@id/startDateTextView"
+        app:layout_constraintStart_toStartOf="@id/area_tv"
+        app:layout_constraintTop_toBottomOf="@id/area_tv"
+        android:layout_marginTop="8dp"
+        android:text="2024-01-13" />
+
+    <TextView
+        android:id="@+id/endDate_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="@id/emblem_iv"
+        app:layout_constraintTop_toBottomOf="@id/startDate_tv"
         android:layout_marginTop="8dp"
         android:text="End Date: 2024-01-24" />
 
     <TextView
-        android:id="@+id/matchdayTextView"
+        android:id="@+id/matchday_tv"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:layout_constraintStart_toEndOf="@id/emblemImageView"
-        app:layout_constraintTop_toBottomOf="@id/endDateTextView"
+        app:layout_constraintStart_toStartOf="@id/emblem_iv"
+        app:layout_constraintTop_toBottomOf="@id/endDate_tv"
         android:layout_marginTop="8dp"
         android:text="Current Matchday: 3" />
+    <TextView
+        android:id="@+id/numberOfAvailableSeason_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="@id/matchday_tv"
+        app:layout_constraintTop_toBottomOf="@id/matchday_tv"
+        android:layout_marginTop="8dp"
+        android:text="Number of Available Season: 3" />
+    <TextView
+        android:id="@+id/lastUpdate_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="@id/matchday_tv"
+        app:layout_constraintTop_toBottomOf="@id/numberOfAvailableSeason_tv"
+        android:layout_marginTop="8dp"
+        android:text="Last updated" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

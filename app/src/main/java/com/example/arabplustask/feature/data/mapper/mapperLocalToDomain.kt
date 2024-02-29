@@ -11,7 +11,7 @@ import com.example.arabplustask.feature.domain.entity.LocalCompetitions
 import com.example.arabplustask.feature.domain.entity.LocalCurrentSeason
 import com.example.arabplustask.feature.domain.entity.LocalWinner
 
-
+// from local database to domain *
 fun LocalCompetitions.toDomainCompetitions() : DomainCompetitions{
    return DomainCompetitions(
        competitions = this.competitions?.toDomainCompetition(),
