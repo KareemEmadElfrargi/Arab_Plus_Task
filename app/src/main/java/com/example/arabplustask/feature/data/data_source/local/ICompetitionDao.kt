@@ -13,6 +13,6 @@ interface ICompetitionDao {
      fun insert( listOfCompetition : List<LocalCompetition>)
 
     @Query("SELECT * FROM CompetitionsTable")
-     fun getAll(): List<LocalCompetition>
+     fun getAll(): List<LocalCompetition>?
 
 }

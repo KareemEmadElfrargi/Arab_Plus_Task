@@ -16,14 +16,13 @@ class AppTypeConverter {
         return Gson().fromJson(json, LocalArea::class.java)
     }
 
-
     @TypeConverter
-    fun fromCurrentSeason(local: LocalCurrentSeason): String {
+    fun fromCurrentSeason(local: LocalCurrentSeason?): String {
         return Gson().toJson(local)
     }
 
     @TypeConverter
-    fun toCurrentSeason(json: String): LocalCurrentSeason {
+    fun toCurrentSeason(json: String?): LocalCurrentSeason? {
         return Gson().fromJson(json, LocalCurrentSeason::class.java)
     }
 
@@ -36,4 +35,5 @@ class AppTypeConverter {
     fun toLocalWinner(json: String): LocalWinner {
         return Gson().fromJson(json, LocalWinner::class.java)
     }
+
 }

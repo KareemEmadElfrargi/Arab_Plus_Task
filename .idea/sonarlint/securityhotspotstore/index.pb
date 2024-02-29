@@ -69,3 +69,5 @@ Tapp/src/main/java/com/example/arabplustask/feature/domain/entity/LocalCompetiti
 happ/src/main/java/com/example/arabplustask/feature/presentation/common/viewmodel/CompetitionViewModel.kt,c\e\cea95155828a70cafac681a3fa17961e53ba95b9
 m
 =app/src/main/java/com/example/arabplustask/util/Extentions.kt,f\d\fdf8c5df6d3f10aa9831e44142002d9a452edbeb
+F
+app/proguard-rules.pro,9\e\9e08934d811afe28fbc77aaa3c0d747b94348db9

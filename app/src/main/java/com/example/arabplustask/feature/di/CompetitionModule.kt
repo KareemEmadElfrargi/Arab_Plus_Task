@@ -5,7 +5,6 @@ import com.example.arabplustask.feature.data.data_source.remote.CompetitionRemot
 import com.example.arabplustask.feature.data.data_source.remote.ICompetitionRemoteData
 import com.example.arabplustask.feature.data.repo_impl.CompetitionRepositoryImp
 import com.example.arabplustask.feature.domain.repo.ICompetitionRepository
-import com.example.arabplustask.feature.domain.usecase.GetAllCompetition
 import com.example.arabplustask.feature.domain.usecase.IGetAllCompetition
 import dagger.Module
 import dagger.Provides
@@ -24,6 +23,6 @@ object CompetitionModule {
         competitionRemoteData : ICompetitionRemoteData,databaseApp: AppDatabase
     ) : ICompetitionRepository = CompetitionRepositoryImp(competitionRemoteData,databaseApp)
 
-    @Provides
-    fun provideCompetitionUseCase(repo:ICompetitionRepository): IGetAllCompetition = GetAllCompetition(repo)
+//    @Provides
+//    fun provideCompetitionUseCase(repo:ICompetitionRepository): IGetAllCompetition = GetAllCompetition(repo)
 }

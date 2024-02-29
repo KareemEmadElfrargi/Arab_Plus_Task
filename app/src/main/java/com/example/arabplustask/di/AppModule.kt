@@ -17,6 +17,6 @@ object AppModule {
     @Singleton
     fun provideAppDatabase(@ApplicationContext appContext: Context): AppDatabase {
         return Room.databaseBuilder(
-            appContext, AppDatabase::class.java, "arabplus.db").build()
+            appContext, AppDatabase::class.java, "arabplus.db").allowMainThreadQueries().fallbackToDestructiveMigration().build()
     }
 }
