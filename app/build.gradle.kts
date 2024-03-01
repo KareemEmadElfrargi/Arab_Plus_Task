@@ -10,15 +10,18 @@ plugins {
 android {
     namespace = "com.example.arabplustask"
     compileSdk = 34
-
+    buildFeatures {
+        buildConfig = true
+    }
     defaultConfig {
         applicationId = "com.example.arabplustask"
         minSdk = 28
         targetSdk = 34
         versionCode = 1
         versionName = "1.0"
-
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
+        buildConfigField ("String", "TOKEN", "\"93d08bea3c7b48979b4b098fc8707dd5\"")
+
     }
 
     buildTypes {
@@ -28,6 +31,7 @@ android {
             proguardFiles(
                 getDefaultProguardFile("proguard-android-optimize.txt"),
                 "proguard-rules.pro")
+            signingConfig = signingConfigs.getByName("debug")
         }
     }
     compileOptions {

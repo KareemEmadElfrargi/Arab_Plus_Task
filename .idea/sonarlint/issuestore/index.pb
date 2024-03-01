@@ -33,8 +33,6 @@ _app/src/main/java/com/example/arabplustask/feature/presentation/common/activity
 Kapp/src/main/java/com/example/arabplustask/feature/domain/entity/Filters.kt,f\0\f0d708181ff0d628041a3ecc868554bf42ef2b7b
 P
  app/src/main/AndroidManifest.xml,8\c\8c55c3ccc257e5907959013f99656e4c8ec3903e
-m
-=app/src/main/java/com/example/arabplustask/util/SecretData.kt,3\6\36dcb3bcba5ca3c00e1a0268b6986fa54d8f963d
 j
 :app/src/main/java/com/example/arabplustask/di/AppModule.kt,5\a\5ab67774e879a7c4f826d2bc9a3bd195d28d6f62
 ‡
@@ -71,3 +69,7 @@ m
 =app/src/main/java/com/example/arabplustask/util/Extentions.kt,f\d\fdf8c5df6d3f10aa9831e44142002d9a452edbeb
 F
 app/proguard-rules.pro,9\e\9e08934d811afe28fbc77aaa3c0d747b94348db9
+k
+;app/src/main/java/com/example/arabplustask/util/Constant.kt,e\8\e8e5e2acbe08d08b3b11499df7fed867cffa4c77
+A
+secure.properties,6\3\6332865c8209d854b4f425b345ddca45981f8278

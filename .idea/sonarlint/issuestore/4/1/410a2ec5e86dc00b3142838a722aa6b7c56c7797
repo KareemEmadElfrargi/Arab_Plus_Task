@@ -1,5 +1,4 @@
 
-Bkotlin:S125"Remove this commented out code.(ë‡ÎÎùÿÿÿÿ8¯Óè˜ß1
-Ykotlin:S1144+"5Remove this unused private "setupRecycleView" method.(¢³­šÿÿÿÿÿ8ÑÀí˜ß1
->kotlin:S1128"Remove this unused import.(İ˜â”ÿÿÿÿÿ8ö÷¸±ß1
-~kotlin:S1186+"ZAdd a nested comment explaining why this function is empty or complete the implementation.(¢³­šÿÿÿÿÿ8×Àí˜ß1
+>kotlin:S1128"Remove this unused import.(Øîğùÿÿÿÿ8Æ‚·ß1
+>kotlin:S1128"Remove this unused import.(‘é—½şÿÿÿÿ8ÏàèÅß1
+>kotlin:S1128"Remove this unused import.(İ˜â”ÿÿÿÿÿ8ĞàèÅß1

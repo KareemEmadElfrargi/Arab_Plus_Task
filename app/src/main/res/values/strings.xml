@@ -2,4 +2,11 @@
     <string name="app_name">Arab Plus Task</string>
     <string name="primera_b_nacional">Primera B Nacional</string>
     <string name="argentina">Argentina</string>
+    <string name="number_of_available_season_3">Number of Available Season: 3</string>
+    <string name="last_updated">Last updated</string>
+    <string name="current_matchday_3">Current Matchday: 3</string>
+    <string name="end_date_2024_01_24">End Date: 2024-01-24</string>
+    <string name="_2024_01_13">2024-01-13</string>
+    <string name="area">area</string>
+    <string name="africa_cup">Africa Cup</string>
 </resources>

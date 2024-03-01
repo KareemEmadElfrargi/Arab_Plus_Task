@@ -2,15 +2,22 @@ package com.example.arabplustask.feature.data.data_source.remote
 
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
-
+// old method without hilt
 object RetrofitClient {
     private const val BASE_URL = "http://api.football-data.org/v4/"
-
-    fun create(): FootballApiService {
-        val retrofit = Retrofit.Builder()
-            .baseUrl(BASE_URL)
-            .addConverterFactory(GsonConverterFactory.create())
-            .build()
-        return retrofit.create(FootballApiService::class.java)
+    private var footballApiService: FootballApiService? = null
+    fun getInstance(): FootballApiService {
+        if (footballApiService == null) {
+            synchronized(RetrofitClient::class.java) {
+                if (footballApiService == null) {
+                    val retrofit = Retrofit.Builder()
+                        .baseUrl(BASE_URL)
+                        .addConverterFactory(GsonConverterFactory.create())
+                        .build()
+                    footballApiService = retrofit.create(FootballApiService::class.java)
+                }
+            }
+        }
+        return footballApiService!!
     }
 }

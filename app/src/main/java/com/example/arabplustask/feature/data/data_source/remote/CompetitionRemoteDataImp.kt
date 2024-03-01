@@ -1,15 +1,17 @@
 package com.example.arabplustask.feature.data.data_source.remote
 
 import android.util.Log
+import com.example.arabplustask.BuildConfig
 import com.example.arabplustask.feature.domain.entity.RemoteCompetitions
 import com.example.arabplustask.util.Resource
-import com.example.arabplustask.util.secretData
+import javax.inject.Inject
 
-class CompetitionRemoteDataImp:ICompetitionRemoteData {
+class CompetitionRemoteDataImp @Inject constructor(
+    private val apiService : FootballApiService
+):ICompetitionRemoteData {
     override suspend fun getCompetition(): Resource<RemoteCompetitions> {
-        val apiService = RetrofitClient.create()
         try {
-            val competitionsResponse = apiService.getCompetitions(secretData)
+            val competitionsResponse = apiService.getCompetitions(BuildConfig.TOKEN)
             Log.i("CompetitionRemoteDataImp", "getCompetitionResponse: ${competitionsResponse.body().toString()}")
             if (competitionsResponse.isSuccessful){
                 competitionsResponse.body()?.let {

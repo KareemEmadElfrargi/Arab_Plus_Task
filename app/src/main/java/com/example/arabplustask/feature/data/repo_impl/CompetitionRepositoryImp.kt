@@ -19,7 +19,7 @@ import javax.inject.Inject
 
 class CompetitionRepositoryImp @Inject constructor(
     private val  competitionRemoteDataSource : ICompetitionRemoteData,
-    private val competitionLocalDataSource : AppDatabase
+    private val competitionLocalDataSource : AppDatabase,
 ):ICompetitionRepository {
     override suspend fun getCompetition(context: Context): Resource<DomainCompetitions> {
         if (connectivity(context)) {
@@ -65,7 +65,6 @@ class CompetitionRepositoryImp @Inject constructor(
     override suspend fun saveToLocal(data: List<LocalCompetition>) {
        competitionLocalDataSource.CompetitionDao().insert(data)
     }
-
     fun connectivity(context:Context):Boolean{
         return context.isInternetAvailable()
     }
