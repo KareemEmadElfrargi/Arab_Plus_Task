@@ -90,4 +90,9 @@ dependencies {
     //noinspection KaptUsageInsteadOfKsp
     kapt ("androidx.room:room-compiler:2.6.1")
     implementation ("androidx.room:room-ktx:2.6.1")
+
+    //dimens
+    implementation ("com.intuit.sdp:sdp-android:1.1.0")
+    //font dimens
+    implementation ("com.intuit.ssp:ssp-android:1.1.0")
 }

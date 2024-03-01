@@ -5,10 +5,10 @@
     android:layout_height="wrap_content">
 
     <androidx.cardview.widget.CardView
-        android:layout_width="300dp"
-        android:layout_height="90dp"
-        android:layout_margin="8dp"
-        app:cardCornerRadius="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_90sdp"
+        android:layout_margin="@dimen/_8sdp"
+        app:cardCornerRadius="@dimen/_6sdp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         >
@@ -17,13 +17,13 @@
             android:id="@+id/cardContainer"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:padding="16dp">
+            android:padding="@dimen/_2sdp">
 
             <ImageView
                 android:id="@+id/competition_emblem"
-                android:layout_width="50dp"
-                android:layout_height="50dp"
-                android:layout_marginEnd="16dp"
+                android:layout_width="@dimen/_40sdp"
+                android:layout_height="@dimen/_40sdp"
+                android:layout_marginEnd="@dimen/_14sdp"
                 android:src="@drawable/champions"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
@@ -33,10 +33,11 @@
                 android:id="@+id/competition_name"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="2dp"
+                android:layout_marginTop="@dimen/_2sdp"
                 android:text="@string/primera_b_nacional"
-                android:textSize="16sp"
+                android:fontFamily="@font/dubai_bold"
                 android:textStyle="bold"
+                android:textSize="@dimen/_14sdp"
                 app:layout_constraintHorizontal_bias="0"
                 app:layout_constraintStart_toEndOf="@+id/competition_emblem"
                 app:layout_constraintTop_toTopOf="@+id/competition_emblem" />
@@ -46,9 +47,11 @@
                 android:id="@+id/competition_area"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="8dp"
+                android:layout_marginTop="@dimen/_2sdp"
                 android:text="@string/argentina"
-                android:textSize="14sp"
+                android:fontFamily="@font/dubai_bold"
+                android:textStyle="bold"
+                android:textSize="@dimen/_14sdp"
                 app:layout_constraintStart_toStartOf="@+id/competition_name"
                 app:layout_constraintTop_toBottomOf="@+id/competition_name" />
 

@@ -7,8 +7,8 @@
 
     <ImageView
         android:id="@+id/emblem_iv"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
+        android:layout_width="@dimen/_100sdp"
+        android:layout_height="@dimen/_100sdp"
         android:scaleType="centerCrop"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
@@ -18,12 +18,13 @@
         android:id="@+id/nameOfCompetition_tv"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textSize="18sp"
+        android:textSize="@dimen/_18sdp"
         android:textStyle="bold"
+        android:fontFamily="@font/dubai_bold"
         app:layout_constraintStart_toEndOf="@id/emblem_iv"
         app:layout_constraintTop_toTopOf="@id/emblem_iv"
-        app:layout_constraintBottom_toTopOf="@+id/startDate_tv"
         android:layout_marginStart="16dp"
+        app:layout_constraintBottom_toBottomOf="@+id/emblem_iv"
         android:text="@string/africa_cup" />
 
 
@@ -32,6 +33,9 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/area"
+        android:fontFamily="@font/dubai_light"
+        android:textStyle="bold"
+        android:textSize="@dimen/_16sdp"
         app:layout_constraintStart_toStartOf="@id/startDate_tv"
         app:layout_constraintTop_toBottomOf="@id/emblem_iv" />
 
@@ -39,6 +43,9 @@
         android:id="@+id/startDate_tv"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:fontFamily="@font/dubai_light"
+        android:textStyle="bold"
+        android:textSize="@dimen/_16sdp"
         app:layout_constraintStart_toStartOf="@id/area_tv"
         app:layout_constraintTop_toBottomOf="@id/area_tv"
         android:layout_marginTop="8dp"
@@ -51,6 +58,9 @@
         app:layout_constraintStart_toStartOf="@id/emblem_iv"
         app:layout_constraintTop_toBottomOf="@id/startDate_tv"
         android:layout_marginTop="8dp"
+        android:fontFamily="@font/dubai_light"
+        android:textStyle="bold"
+        android:textSize="@dimen/_16sdp"
         android:text="@string/end_date_2024_01_24" />
 
     <TextView
@@ -60,6 +70,9 @@
         app:layout_constraintStart_toStartOf="@id/emblem_iv"
         app:layout_constraintTop_toBottomOf="@id/endDate_tv"
         android:layout_marginTop="8dp"
+        android:fontFamily="@font/dubai_light"
+        android:textStyle="bold"
+        android:textSize="@dimen/_16sdp"
         android:text="@string/current_matchday_3" />
     <TextView
         android:id="@+id/numberOfAvailableSeason_tv"
@@ -68,6 +81,9 @@
         app:layout_constraintStart_toStartOf="@id/matchday_tv"
         app:layout_constraintTop_toBottomOf="@id/matchday_tv"
         android:layout_marginTop="8dp"
+        android:fontFamily="@font/dubai_light"
+        android:textStyle="bold"
+        android:textSize="@dimen/_16sdp"
         android:text="@string/number_of_available_season_3" />
     <TextView
         android:id="@+id/lastUpdate_tv"
@@ -76,6 +92,9 @@
         app:layout_constraintStart_toStartOf="@id/matchday_tv"
         app:layout_constraintTop_toBottomOf="@id/numberOfAvailableSeason_tv"
         android:layout_marginTop="8dp"
+        android:fontFamily="@font/dubai_light"
+        android:textStyle="bold"
+        android:textSize="@dimen/_16sdp"
         android:text="@string/last_updated" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
