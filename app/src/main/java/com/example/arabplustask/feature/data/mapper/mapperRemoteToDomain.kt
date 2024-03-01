@@ -36,7 +36,7 @@ fun RemoteArea.toDomainArea()= DomainArea(
     code = code, flag = flag, id = id, name = name
 )
 fun RemoteCurrentSeason.toDomainCurrentSeason() = DomainCurrentSeason(
-    currentMatchday =currentMatchday,
+    currentMatchday = currentMatchday,
     endDate = endDate,
     id = id,
     startDate = startDate,

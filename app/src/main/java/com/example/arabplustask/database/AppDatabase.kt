@@ -8,7 +8,7 @@ import com.example.arabplustask.feature.domain.entity.LocalCompetition
 import com.example.arabplustask.util.AppTypeConverter
 
 @TypeConverters(value = [AppTypeConverter::class])
-@Database(entities = [LocalCompetition::class], version = 2, exportSchema = false)
+@Database(entities = [LocalCompetition::class], version = 1, exportSchema = false)
 abstract class AppDatabase :RoomDatabase() {
     abstract fun CompetitionDao() : ICompetitionDao
 }

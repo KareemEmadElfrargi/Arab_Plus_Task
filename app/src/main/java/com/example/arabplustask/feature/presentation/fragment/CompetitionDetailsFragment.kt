@@ -33,7 +33,7 @@ class CompetitionDetailsFragment: Fragment() {
 
         binding.apply {
             competition?.let {
-                areaTv.text = competition.area.toString()
+                areaTv.text = competition.area?.name.toString()
                 lastUpdateTv.text = competition.lastUpdated
                 startDateTv.text = competition.currentSeason?.startDate
                 endDateTv.text = competition.currentSeason?.endDate
