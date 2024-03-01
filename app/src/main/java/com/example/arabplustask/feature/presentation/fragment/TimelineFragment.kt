@@ -62,8 +62,6 @@ class TimelineFragment : Fragment() {
                     is Resource.Success -> {
                         resultOFData.data?.let { competitions ->
                             setupRecycleView(competitions)
-
-
                         }
                     }
 

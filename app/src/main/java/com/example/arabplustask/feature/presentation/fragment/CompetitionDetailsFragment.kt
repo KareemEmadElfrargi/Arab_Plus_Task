@@ -42,8 +42,7 @@ class CompetitionDetailsFragment: Fragment() {
                 competition.emblem?.let {
                     Glide.with(requireContext()).load(it).into(emblemIv)
                 }
-
-
+                catchAllCompetitionTv.text = competition.toString()
             }
 
         }
