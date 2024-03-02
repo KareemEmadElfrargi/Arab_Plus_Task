@@ -73,3 +73,9 @@ k
 ;app/src/main/java/com/example/arabplustask/util/Constant.kt,e\8\e8e5e2acbe08d08b3b11499df7fed867cffa4c77
 A
 secure.properties,6\3\6332865c8209d854b4f425b345ddca45981f8278
+w
+Gapp/src/main/java/com/example/arabplustask/Secure/CustomTrustManager.kt,c\a\ca3e8173f3d4bba2434c199dacd352d129115b98
+ê
+`app/src/main/java/com/example/arabplustask/feature/data/data_source/remote/createOkHttpClient.kt,b\5\b5fb0aee3e3edb73f7388f8d0dbaa70902bcf26a
+u
+Eapp/src/main/java/com/example/arabplustask/Secure/TLSSocketFactory.kt,9\e\9e20976e243edff53ef7216cdf323e07e2438bfb

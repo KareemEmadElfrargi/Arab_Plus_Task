@@ -1,7 +1,11 @@
 package com.example.arabplustask.feature.data.data_source.remote
 
+import com.example.arabplustask.Secure.TLSSocketFactory
+import okhttp3.OkHttpClient
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
+import java.io.InputStream
+
 // old method without hilt
 object RetrofitClient {
     private const val BASE_URL = "http://api.football-data.org/v4/"
@@ -20,4 +24,6 @@ object RetrofitClient {
         }
         return footballApiService!!
     }
+
+
 }

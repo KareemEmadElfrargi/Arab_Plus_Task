@@ -20,6 +20,7 @@ android {
         versionCode = 1
         versionName = "1.0"
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
+//        vectorDrawables.useSupportLibrary = true
         buildConfigField ("String", "TOKEN", "\"93d08bea3c7b48979b4b098fc8707dd5\"")
 
     }

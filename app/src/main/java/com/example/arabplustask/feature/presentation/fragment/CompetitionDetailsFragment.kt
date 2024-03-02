@@ -37,6 +37,7 @@ class CompetitionDetailsFragment: Fragment() {
                 lastUpdateTv.text = competition.lastUpdated
                 startDateTv.text = competition.currentSeason?.startDate
                 endDateTv.text = competition.currentSeason?.endDate
+                nameOfCompetitionTv.text = competition.area?.name.toString()
                 matchdayTv.text = competition.currentSeason?.currentMatchday.toString()
                 numberOfAvailableSeasonTv.text = competition.numberOfAvailableSeasons.toString()
                 competition.emblem?.let {
